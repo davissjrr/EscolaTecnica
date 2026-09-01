@@ -3,7 +3,6 @@
     class Aluno : Pessoa
     {
         public string Curso { get; set; }
-
         // Construtor com herança (base no C#, primo do super do Java)
         public Aluno(string nome, string curso) : base(nome)
         {
@@ -15,5 +14,7 @@
         {
             Console.WriteLine($"ALUNO: {Nome} / CURSO: {Curso}");
         }
+
+        
     }
 }
