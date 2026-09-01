@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EscolaTecnica
+﻿namespace EscolaTecnica
 {
-    internal class Professor
+    class Professor : Pessoa
     {
+        public string Disciplina { get; set; }
+
+        public Professor (string nome, string disciplina) : base(nome)
+        {
+            Disciplina = disciplina;
+        }
+
+        public override void ExibirInfos()
+        {
+            Console.WriteLine($"PROFESSOR: {Nome} / DISCIPLINA: {Disciplina}");
+        }
     }
 }
